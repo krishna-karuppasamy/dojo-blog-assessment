@@ -1,0 +1,46 @@
+[
+    {
+        "name": "krishna",
+        "content": "Hi All, Good Morning..!",
+        "image":"image1.png",
+        "likes":4,
+        "comments":[
+            {
+                "name":"Comment1",
+                "comment":"Happy Morning"
+            },
+            {
+                "name":"Comment2",
+                "comment":"Good Morning"
+            }
+        ]
+    },
+    {
+        "name": "Sindhu",
+        "content": "At work",
+        "image":"image2.png",
+        "likes":100,
+        "comments":[
+            {
+                "name":"Comment1",
+                "comment":"Nice"
+            },
+            {
+                "name":"Comment2",
+                "comment":"Super"
+            }
+        ]
+    },
+    {
+        "name": "Bebu",
+        "content": "Hi trip",
+        "image":"image3.png",
+        "likes":50,
+        "comments":[
+            {
+                "name":"Comment1",
+                "comment":"Super"
+            }
+        ]
+    }
+]
