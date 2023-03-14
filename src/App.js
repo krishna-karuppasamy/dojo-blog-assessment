@@ -15,7 +15,7 @@ function App() {
       <Provider store={store}>
         <BrowserRouter>
           <Routes>
-            <Route exact path="/" element={<Timeline />} />
+            <Route exact path="/" element={<Timeline userName={'krishna'}/>} />
             <Route path="/timeline" element={<Timeline />} />
             <Route path="/blogs" element={<MyBlogs />} />
           </Routes>

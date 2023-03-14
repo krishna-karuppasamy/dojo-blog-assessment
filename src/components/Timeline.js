@@ -117,13 +117,13 @@ export function Timeline({ userName }) {
   }, []);
 
   function likeThePost(e) {
-    console.log("Like " + e.target.value);
+   // console.log("Like " + e.target.value);
     dispatch(blogsPostActionGenerator("update_blog", e.target.value));
   }
 
   function postNewBlog(e) {
     e.preventDefault();
-    console.log("Post new blog " + e.target.textarea.value);
+    //console.log("Post new blog " + e.target.textarea.value);
     dispatch(blogsPostActionGenerator("create_blog", e.target.textarea.value));
     e.target.textarea.value = "";
   }
@@ -143,11 +143,7 @@ export function Timeline({ userName }) {
   }
 
   function showMyBlogs(e) {
-    //console.log(state.data);
-    state.data.filter((name)=>name.username=='Krishna').map((posts) => {
-      console.log(posts);
     
-    });
     setUserApiStatus("myBlogs");
   }
 
@@ -317,11 +313,13 @@ export function Timeline({ userName }) {
       );
     }
     default: {
+      
       return (
         <div>
           <div className="container">
             <button onClick={showTimeline}> &larr; Back</button> 
           </div>
+        
           {state.data.filter((name)=>name.username=='Krishna').map((posts) => {
             return (
               <div key={posts.id}>
@@ -348,7 +346,7 @@ export function Timeline({ userName }) {
                     </div>
 
                     <label className="sr-only mt-1" for="inlineFormInputGroup">
-                      Comments
+                      Comments on the blogs
                     </label>
 
                     {posts.comments
